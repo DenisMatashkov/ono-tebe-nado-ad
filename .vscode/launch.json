@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Открыть сайт в Edge",
+      "file": "${workspaceFolder}/index.html",
+      "userDataDir": "${env:TEMP}/vscode-edge-ono-tebe-nado"
+    }
+  ]
+}
