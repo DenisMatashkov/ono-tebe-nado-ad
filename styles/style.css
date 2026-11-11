@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  list-style: circle;
+  list-style: circle; /* маркеры в виде кружков */
 }
 
 .header__links-list-item_no-bullit {
@@ -22,7 +22,7 @@
 .footer__menu-link,
 .address a,
 .lots__look-more-link {
-  text-underline-offset: 4px;
+  text-underline-offset: 4px; /* сдвиг подчёркивания */
 }
 
 .header__link_active,
@@ -45,7 +45,7 @@
 .address {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /* выравнивание по левому краю контактного блока */
   max-width: 264px;
   font-size: 18px;
   font-style: normal;
@@ -53,20 +53,20 @@
 }
 
 .header__address {
-  justify-self: end;
+  justify-self: end; /* прижимание <address> к правому краю его грид-колонки */
   max-width: 240px;
 }
 
 /* Общий оверлей заполняет родителя с position: relative. */
 .overlay {
   position: absolute;
-  z-index: 0;
-  inset: 0;
+  z-index: 0; 
+  inset: 0; /* задаем нулевой отступ */
   background-color: rgb(0 0 0 / 60%);
 }
 
 .cover {
-  position: relative;
+  position: relative; /* границы для оверлея */
   min-height: 757px;
   padding: 165px 50px 50px;
   color: #fff;
@@ -117,7 +117,7 @@
   margin-top: 106px;
 }
 
-.cover__description-text {
+.cover__description-text { /* у родителя уже стоит z-index: 1 */
   font-size: 22px;
   line-height: 28px;
   word-spacing: 18px;
@@ -126,9 +126,9 @@
 
 .bet-button {
   flex-shrink: 0;
-  border: 1px solid currentColor;
+  border: 1px solid currentColor; /* рамка */
   padding: 11px 32px;
-  color: inherit;
+  color: inherit; /* цвет наследуется от родителя cover */
   font-size: 22px;
   font-weight: 400;
   line-height: 27px;
@@ -151,10 +151,10 @@
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* перенос карточек на новую строку */
   align-items: stretch;
   gap: 25px;
-  list-style: none;
+  list-style: none; /* убираем маркеры у списка карточек */
 }
 
 .lots__card-list-item {
@@ -163,7 +163,7 @@
   min-height: 596px;
 }
 
-.card-link {
+.card-link { /* ссылка на карточку лота */
   display: block;
   height: 100%;
   text-decoration: none;
@@ -218,8 +218,8 @@
   line-height: 24px;
 }
 
-.lots__look-more-link {
-  display: inline-block;
+.lots__look-more-link { /* ссылка на страницу со всеми лотами */
+  display: inline-block; /* позвоялет задать внешние отступы */
   margin: 30px 0 0 40px;
   font-size: 20px;
   line-height: 23px;
@@ -234,7 +234,7 @@
   padding-top: 35px;
 }
 
-.about__logo {
+.about__logo { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,7 +245,7 @@
   background-color: #000;
 }
 
-.about__logo-image {
+.about__logo-image { /* делает изображение блочным */
   display: block;
   width: 148px;
 }
@@ -269,7 +269,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: start;
+  align-items: start; /* выравнивание по верхнему краю */
   margin-top: 180px;
   padding: 0 50px 84px;
   font-size: 18px;
@@ -282,7 +282,7 @@
 
 .footer__social-list {
   display: flex;
-  justify-self: end;
+  justify-self: end; /* прижатие к правому ряду колонки */
   gap: 48px;
   list-style: none;
 }
