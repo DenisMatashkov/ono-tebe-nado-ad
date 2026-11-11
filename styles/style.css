@@ -60,7 +60,7 @@
 /* Общий оверлей заполняет родителя с position: relative. */
 .overlay {
   position: absolute;
-  z-index: 0; 
+  z-index: 0;
   inset: 0; /* задаем нулевой отступ */
   background-color: rgb(0 0 0 / 60%);
 }
@@ -234,7 +234,7 @@
   padding-top: 35px;
 }
 
-.about__logo { 
+.about__logo {
   display: flex;
   justify-content: center;
   align-items: center;
